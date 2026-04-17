@@ -22,7 +22,7 @@ const EQUIPOS_DEFAULT: Equipo[] = [
     combustible: 'Eléctrico 48V',
     precio: 'Desde $450,000',
     badge: 'Nuevo',
-    imagen: '/images/Nissan/Nissan1.jpg'
+    imagen: '/images/Nissan1.jpg'
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const EQUIPOS_DEFAULT: Equipo[] = [
     combustible: 'Eléctrico 48V',
     precio: 'Desde $520,000',
     badge: 'Nuevo',
-    imagen: '/images/Nissan/Nissan2.jpg'
+    imagen: '/images/Nissan2.jpg'
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const EQUIPOS_DEFAULT: Equipo[] = [
     combustible: 'Gas LP',
     precio: 'Desde $380,000',
     badge: 'Nuevo',
-    imagen: '/images/Nissan/Nissan3.jpg'
+    imagen: '/images/Nissan3.jpg'
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ const EQUIPOS_DEFAULT: Equipo[] = [
     combustible: 'Eléctrico 36V',
     precio: 'Desde $680,000',
     badge: 'Nuevo',
-    imagen: '/images/Nissan/Nissan4.jpg'
+    imagen: '/images/Nissan4.jpg'
   }
 ];
 

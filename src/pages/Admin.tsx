@@ -12,7 +12,7 @@ const Admin = () => {
     combustible: '',
     precio: '',
     badge: 'Nuevo',
-    imagen: '/images/Nissan/Nissan1.jpg'
+    imagen: '/images/Nissan1.jpg'
   });
   const [editingId, setEditingId] = useState<number | null>(null);
 
@@ -38,7 +38,7 @@ const Admin = () => {
       combustible: '',
       precio: '',
       badge: 'Nuevo',
-      imagen: '/images/Nissan/Nissan1.jpg'
+      imagen: '/images/Nissan1.jpg'
     });
   };
 
@@ -160,10 +160,10 @@ const Admin = () => {
                   value={formData.imagen}
                   onChange={handleChange}
                 >
-                  <option value="/images/Nissan/Nissan1.jpg">Nissan 1</option>
-                  <option value="/images/Nissan/Nissan2.jpg">Nissan 2</option>
-                  <option value="/images/Nissan/Nissan3.jpg">Nissan 3</option>
-                  <option value="/images/Nissan/Nissan4.jpg">Nissan 4</option>
+                  <option value="/images/Nissan1.jpg">Nissan 1</option>
+                  <option value="/images/Nissan2.jpg">Nissan 2</option>
+                  <option value="/images/Nissan3.jpg">Nissan 3</option>
+                  <option value="/images/Nissan4.jpg">Nissan 4</option>
                 </select>
               </div>
             </div>
