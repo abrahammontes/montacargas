@@ -1,0 +1,205 @@
+.admin {
+  padding-top: 100px;
+  min-height: 100vh;
+  background: var(--color-gray-100);
+}
+
+.adminHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adminTitle {
+  font-size: 2rem;
+  color: var(--color-gray-800);
+}
+
+.backBtn {
+  padding: 0.625rem 1.25rem;
+  background: var(--color-gray-800);
+  color: var(--color-white);
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2rem;
+}
+
+.addForm {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.formTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--color-gray-800);
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-gray-800);
+}
+
+.formInput,
+.formSelect {
+  padding: 0.75rem;
+  border: 2px solid var(--color-gray-200);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.formInput:focus,
+.formSelect:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.submitBtn {
+  margin-top: 1.5rem;
+  padding: 0.875rem 2rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.submitBtn:hover {
+  background: #d45a10;
+}
+
+.table {
+  background: var(--color-white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.table th {
+  background: var(--color-gray-100);
+  font-weight: 600;
+  color: var(--color-gray-800);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.table td {
+  color: var(--color-gray-800);
+}
+
+.table img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editBtn,
+.deleteBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.editBtn {
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.editBtn:hover {
+  background: #007a38;
+}
+
+.deleteBtn {
+  background: #dc2626;
+  color: var(--color-white);
+}
+
+.deleteBtn:hover {
+  background: #b91c1c;
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badgeNuevo {
+  background: #CC0000;
+  color: var(--color-white);
+}
+
+.badgeRenta {
+  background: #CC0000;
+  color: var(--color-white);
+}
+
+.badgeUsado {
+  background: var(--color-gray-500);
+  color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .table {
+    overflow-x: auto;
+  }
+
+  .table table {
+    min-width: 600px;
+  }
+}
