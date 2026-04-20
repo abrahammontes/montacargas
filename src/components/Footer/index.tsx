@@ -6,7 +6,7 @@ const Footer = () => {
       <div className={styles.content}>
         <div className={styles.brand}>
           <div className={styles.logo}>
-            <img src="/images/logo.jpg" alt="Germont Montacargas" />
+            <img src="/images/logo.png" alt="Germont Montacargas" />
           </div>
           <p className={styles.brandText}>
             Líderes en venta y renta de montacargas en México. 
@@ -61,9 +61,9 @@ const Footer = () => {
         <div className={styles.column}>
           <h4>Contacto</h4>
           <ul>
-            <li><a href="tel:+525512345678">+52 (55) 1234-5678</a></li>
-            <li><a href="mailto:contacto@nissanforklift.com.mx">contacto@nissanforklift.com.mx</a></li>
-            <li><a href="#">Av. Principal #123, CDMX</a></li>
+            <li><a href="tel:+525512345678">+52 33 2874 7228</a></li>
+            <li><a href="mailto:contacto@germont.mx">contacto@germont.mx</a></li>
+            <li><a href="#">Marcelino Rentería #4097, Guadalajara, Jalisco, Mexico, CP 44820</a></li>
           </ul>
         </div>
       </div>

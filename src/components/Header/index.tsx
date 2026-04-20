@@ -33,7 +33,7 @@ const Header = () => {
       <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
         <div className={styles.headerContent}>
           <a href="/" className={styles.logo}>
-            <img src="/images/logo.jpg" alt="Germont Montacargas" />
+            <img src="/images/logo.png" alt="Germont Montacargas" />
           </a>
           <nav className={styles.nav}>
             <ul className={styles.navLinks}>
