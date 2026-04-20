@@ -12,6 +12,7 @@ function HomePage() {
   return (
     <>
       <Header />
+      <WhatsAppButton />
       <main>
         <Hero />
         
@@ -26,7 +27,6 @@ function HomePage() {
 function App() {
   return (
     <BrowserRouter>
-      <WhatsAppButton />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/admin" element={<Admin />} />
