@@ -80,7 +80,7 @@ const Footer = () => {
           <div className={styles.devInfo}>
             <span>Desarrollado por:</span>
             <a href="https://wa.me/523311436802" target="_blank">
-              <img src="/images/logo.png" alt="Germont" className={styles.devLogo} />
+              <img src="/images/espart-graphic-studio-logo.png" alt="Germont" className={styles.devLogo} />
             </a>
           </div>
         </div>
