@@ -215,7 +215,7 @@ Nuevo contacto desde Germont Montacargas:
                 </div>
                 <div className={styles.infoContent}>
                   <h4>Teléfono</h4>
-                  <p>+52 33 2874 7228</p>
+                  <p>+52 33 1143 6802</p>
                 </div>
               </li>
               <li className={styles.infoItem}>

@@ -16,7 +16,7 @@ const Hero = () => {
           <a href="#equipos" className="btn btn-primary">
             Ver Equipos
           </a>
-          <a href="https://wa.me/523328747228?text=Hola,%20me%20interesa%20una%20cotizacion!" className="btn btn-outline">
+          <a href="https://wa.me/523311436802?text=Hola,%20me%20interesa%20una%20cotizacion!" className="btn btn-outline">
             Cotizar Ahora
           </a>
         </div>
