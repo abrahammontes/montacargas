@@ -12,7 +12,7 @@ const Admin = () => {
     combustible: '',
     precio: '',
     badge: 'Nuevo',
-    imagen: '/images/Nissan1.jpg'
+    imagen: '/images/logo.jpg'
   });
   const [editingId, setEditingId] = useState<number | null>(null);
 
@@ -38,7 +38,7 @@ const Admin = () => {
       combustible: '',
       precio: '',
       badge: 'Nuevo',
-      imagen: '/images/Nissan1.jpg'
+      imagen: '/images/logo.jpg'
     });
   };
 
@@ -75,7 +75,7 @@ const Admin = () => {
                   className={styles.formInput}
                   value={formData.nombre}
                   onChange={handleChange}
-                  placeholder="Ej: Nissan NPW0L25"
+                  placeholder="Ej: Germont E25"
                   required
                 />
               </div>
@@ -160,10 +160,10 @@ const Admin = () => {
                   value={formData.imagen}
                   onChange={handleChange}
                 >
-                  <option value="/images/Nissan1.jpg">Nissan 1</option>
-                  <option value="/images/Nissan2.jpg">Nissan 2</option>
-                  <option value="/images/Nissan3.jpg">Nissan 3</option>
-                  <option value="/images/Nissan4.jpg">Nissan 4</option>
+                  <option value="/images/logo.jpg">Imagen 1</option>
+                  <option value="/images/Nissan2.jpg">Imagen 2</option>
+                  <option value="/images/Nissan3.jpg">Imagen 3</option>
+                  <option value="/images/Nissan4.jpg">Imagen 4</option>
                 </select>
               </div>
             </div>
@@ -183,7 +183,7 @@ const Admin = () => {
                     combustible: '',
                     precio: '',
                     badge: 'Nuevo',
-                    imagen: '/images/Nissan/Nissan1.jpg'
+                    imagen: '/images/logo.jpg'
                   });
                 }}
                 className={styles.submitBtn}

@@ -6,7 +6,7 @@ const Hero = () => {
       <div className={styles.heroContent}>
         <p className={styles.heroSubtitle}>Venta y Renta de Montacargas</p>
         <h1 className={styles.heroTitle}>
-          Potencia tu operación con <span>Nissan Forklift</span>
+          Potencia tu operación con <span>Germont Montacargas</span>
         </h1>
         <p className={styles.heroText}>
           Equipos de alta calidad para manejo de materiales. 

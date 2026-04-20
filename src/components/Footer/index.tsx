@@ -6,7 +6,7 @@ const Footer = () => {
       <div className={styles.content}>
         <div className={styles.brand}>
           <div className={styles.logo}>
-            <img src="/images/logo.jpg" alt="Nissan Forklift" />
+            <img src="/images/logo.jpg" alt="Germont Montacargas" />
           </div>
           <p className={styles.brandText}>
             Líderes en venta y renta de montacargas en México. 
@@ -71,7 +71,7 @@ const Footer = () => {
       <div className={styles.bottom}>
         <div className={styles.bottomContent}>
           <p className={styles.copyright}>
-            © 2025 Nissan Forklift México. Todos los derechos reservados.
+            © 2025 Germont Montacargas México. Todos los derechos reservados.
           </p>
           <div className={styles.bottomLinks}>
             <a href="#">Aviso de Privacidad</a>

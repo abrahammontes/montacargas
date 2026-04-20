@@ -15,7 +15,7 @@ export interface Equipo {
 const EQUIPOS_DEFAULT: Equipo[] = [
   {
     id: 1,
-    nombre: 'Nissan NPW0L25',
+    nombre: 'Germont E25',
     tipo: 'Eléctrico',
     capacidad: '2,500 kg',
     altura: '4.5 m',
@@ -26,7 +26,7 @@ const EQUIPOS_DEFAULT: Equipo[] = [
   },
   {
     id: 2,
-    nombre: 'Nissan NPW0L30',
+    nombre: 'Germont E30',
     tipo: 'Eléctrico',
     capacidad: '3,000 kg',
     altura: '4.5 m',
@@ -37,7 +37,7 @@ const EQUIPOS_DEFAULT: Equipo[] = [
   },
   {
     id: 3,
-    nombre: 'Nissan KPX30N',
+    nombre: 'Germont C30',
     tipo: 'Combustión',
     capacidad: '3,000 kg',
     altura: '4.5 m',
@@ -48,7 +48,7 @@ const EQUIPOS_DEFAULT: Equipo[] = [
   },
   {
     id: 4,
-    nombre: 'Nissan TPX20N',
+    nombre: 'Germont R20',
     tipo: 'Pasillo Angosto',
     capacidad: '2,000 kg',
     altura: '6.0 m',

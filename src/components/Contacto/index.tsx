@@ -59,7 +59,7 @@ const Contacto = () => {
     setSubmitted(true);
     
     const mensaje = `
-Nuevo contacto desde Nissan Forklift México:
+Nuevo contacto desde Germont Montacargas:
 - Nombre: ${formData.nombre}
 - Empresa: ${formData.empresa}
 - Email: ${formData.email}
