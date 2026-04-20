@@ -204,7 +204,7 @@ Nuevo contacto desde Germont Montacargas:
                 </div>
                 <div className={styles.infoContent}>
                   <h4>Dirección</h4>
-                  <p>Av. Principal #123, Zona Industrial<br />Ciudad de México, CDMX</p>
+                  <p>Marcelino Rentería #4097, Guadalajara, Jalisco, Mexico, CP 44820</p>
                 </div>
               </li>
               <li className={styles.infoItem}>
@@ -215,7 +215,7 @@ Nuevo contacto desde Germont Montacargas:
                 </div>
                 <div className={styles.infoContent}>
                   <h4>Teléfono</h4>
-                  <p>+52 (55) 1234-5678<br />+52 (55) 9876-5432</p>
+                  <p>+52 33 2874 7228</p>
                 </div>
               </li>
               <li className={styles.infoItem}>
@@ -226,7 +226,7 @@ Nuevo contacto desde Germont Montacargas:
                 </div>
                 <div className={styles.infoContent}>
                   <h4>Email</h4>
-                  <p>contacto@nissanforklift.com.mx<br />servicio@nissanforklift.com.mx</p>
+                  <p>contacto@germont.mx</p>
                 </div>
               </li>
               <li className={styles.infoItem}>
