@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Equipos from './components/Equipos';
 import WhatsAppButton from './components/WhatsAppButton';
 import FacebookButton from './components/FacebookButton';
 
@@ -17,7 +18,7 @@ function HomePage() {
       <FacebookButton />
       <main>
         <Hero />
-        
+        <Equipos />
         <Caracteristicas />
         <Contacto />
       </main>
