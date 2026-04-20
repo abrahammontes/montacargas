@@ -125,6 +125,22 @@
   color: var(--color-primary);
 }
 
+.devInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.devInfo span {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.devLogo {
+  height: 24px;
+  width: auto;
+}
+
 @media (max-width: 768px) {
   .content {
     grid-template-columns: 1fr 1fr;
