@@ -1,7 +1,7 @@
 .contacto {
   padding: 5rem 0;
-  background: rgba(245, 245, 245, 0.7);
-  backdrop-filter: blur(10px);
+  background: rgba(245, 245, 245, 0.4);
+  backdrop-filter: blur(5px);
 }
 
 .sectionHeader {
@@ -32,8 +32,8 @@
 }
 
 .formCard {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
   padding: 2.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -68,7 +68,7 @@
   font-size: 1rem;
   font-family: inherit;
   transition: var(--transition);
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .formInput:focus,
