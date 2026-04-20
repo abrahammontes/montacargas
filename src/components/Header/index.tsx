@@ -39,9 +39,9 @@ const Header = () => {
             <ul className={styles.navLinks}>
               <li><a href="#equipos" className={styles.navLink} onClick={handleNavClick}>Equipos</a></li>
               <li><a href="#caracteristicas" className={styles.navLink} onClick={handleNavClick}>Características</a></li>
-              <li><a href="#contacto" className={styles.navLink} onClick={handleNavClick}>Contacto</a></li>
+              <li><a href="https://wa.me/523328747228?text=Hola,%20me%20interesa%20una%20cotizacion!" className={styles.navLink} onClick={handleNavClick}>Contacto</a></li>
             </ul>
-            <a href="#contacto" className={`btn btn-primary ${styles.ctaBtn}`}>
+            <a href="https://wa.me/523328747228?text=Hola,%20me%20interesa%20una%20cotizacion!" className={`btn btn-primary ${styles.ctaBtn}`}>
               Cotizar
             </a>
             <button 
@@ -62,8 +62,8 @@ const Header = () => {
           <ul className={styles.mobileNavLinks}>
             <li><a href="#equipos" onClick={handleNavClick}>Equipos</a></li>
             <li><a href="#caracteristicas" onClick={handleNavClick}>Características</a></li>
-            <li><a href="#contacto" onClick={handleNavClick}>Contacto</a></li>
-            <li><a href="#contacto" onClick={handleNavClick} className={styles.mobileCta}>Cotizar</a></li>
+            <li><a href="https://wa.me/523328747228?text=Hola,%20me%20interesa%20una%20cotizacion!" onClick={handleNavClick}>Contacto</a></li>
+            <li><a href="https://wa.me/523328747228?text=Hola,%20me%20interesa%20una%20cotizacion!" onClick={handleNavClick} className={styles.mobileCta}>Cotizar</a></li>
           </ul>
         </div>
       )}
