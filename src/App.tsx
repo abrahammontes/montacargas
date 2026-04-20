@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import WhatsAppButton from './components/WhatsAppButton';
 
 import Caracteristicas from './components/Caracteristicas';
 import Contacto from './components/Contacto';
@@ -25,6 +26,7 @@ function HomePage() {
 function App() {
   return (
     <BrowserRouter>
+      <WhatsAppButton />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/admin" element={<Admin />} />
