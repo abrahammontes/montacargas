@@ -4,6 +4,14 @@
   left: 30px;
   width: 80px;
   height: 80px;
+  background: #25D367;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(37, 211, 103, 0.5);
+  z-index: 9999;
+  transition: transform 0.3s ease;
 }
 
 .whatsappButton:hover {
@@ -13,6 +21,7 @@
 .whatsappButton svg {
   width: 48px;
   height: 48px;
+  fill: #fff;
 }
 
 @keyframes pulse {
