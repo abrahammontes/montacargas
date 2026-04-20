@@ -61,7 +61,7 @@ const Footer = () => {
         <div className={styles.column}>
           <h4>Contacto</h4>
           <ul>
-            <li><a href="tel:+525512345678">+52 33 2874 7228</a></li>
+            <li><a href="tel:+523328747228">+52 33 2874 7228</a></li>
             <li><a href="mailto:contacto@germont.mx">contacto@germont.mx</a></li>
             <li><a href="#">Marcelino Rentería #4097, Guadalajara, Jalisco, Mexico, CP 44820</a></li>
           </ul>
