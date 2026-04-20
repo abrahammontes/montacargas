@@ -12,7 +12,7 @@ const Admin = () => {
     combustible: '',
     precio: '',
     badge: 'Nuevo',
-    imagen: '/images/logo.jpg'
+    imagen: '/images/logo.png'
   });
   const [editingId, setEditingId] = useState<number | null>(null);
 
@@ -38,7 +38,7 @@ const Admin = () => {
       combustible: '',
       precio: '',
       badge: 'Nuevo',
-      imagen: '/images/logo.jpg'
+      imagen: '/images/logo.png'
     });
   };
 
@@ -183,7 +183,7 @@ const Admin = () => {
                     combustible: '',
                     precio: '',
                     badge: 'Nuevo',
-                    imagen: '/images/logo.jpg'
+                    imagen: '/images/logo.png'
                   });
                 }}
                 className={styles.submitBtn}

@@ -1,6 +1,7 @@
 .caracteristicas {
   padding: 5rem 0;
-  background: var(--color-white);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
 }
 
 .sectionHeader {
@@ -34,7 +35,8 @@
   text-align: center;
   padding: 2rem;
   border-radius: 12px;
-  background: var(--color-gray-100);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
   transition: var(--transition);
 }
 
@@ -79,7 +81,8 @@
   gap: 4rem;
   margin-top: 4rem;
   padding: 3rem;
-  background: var(--color-gray-900);
+  background: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(10px);
   border-radius: 12px;
   max-width: 900px;
   margin-left: auto;
