@@ -22,7 +22,7 @@ const EQUIPOS_DEFAULT: Equipo[] = [
     combustible: 'Eléctrico 48V',
     precio: 'Desde $450,000',
     badge: 'Nuevo',
-    imagen: '/images/Nissan1.jpg'
+    imagen: '/images/logo.png'
   },
   {
     id: 2,

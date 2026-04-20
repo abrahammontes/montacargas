@@ -1,9 +1,72 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../hooks/useAuth';
 import { useEquipos, Equipo } from '../hooks/useEquipos';
 import styles from './Admin.module.css';
 
-const Admin = () => {
+const LoginForm = () => {
+  const { login } = useAuth();
+  const navigate = useNavigate();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (login(email, password)) {
+      navigate('/admin');
+    } else {
+      setError('Credenciales incorrectas');
+    }
+  };
+
+  return (
+    <div className={styles.loginContainer}>
+      <div className={styles.loginCard}>
+        <h1 className={styles.loginTitle}>Germont Admin</h1>
+        <p className={styles.loginSubtitle}>Ingresa tus credenciales</p>
+        
+        {error && <div className={styles.error}>{error}</div>}
+        
+        <form onSubmit={handleSubmit} className={styles.loginForm}>
+          <div className={styles.formGroup}>
+            <label className={styles.formLabel}>Email</label>
+            <input
+              type="email"
+              className={styles.formInput}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="admin@germont.mx"
+              required
+            />
+          </div>
+          <div className={styles.formGroup}>
+            <label className={styles.formLabel}>Contraseña</label>
+            <input
+              type="password"
+              className={styles.formInput}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="••••••••"
+              required
+            />
+          </div>
+          <button type="submit" className={styles.submitBtn}>
+            Iniciar Sesión
+          </button>
+        </form>
+        
+        <a href="/" className={styles.backLink}>← Volver al sitio</a>
+      </div>
+    </div>
+  );
+};
+
+const AdminPanel = () => {
+  const navigate = useNavigate();
+  const { logout } = useAuth();
   const { equipos, addEquipo, updateEquipo, deleteEquipo, resetEquipos } = useEquipos();
+  
   const [formData, setFormData] = useState<Partial<Equipo>>({
     nombre: '',
     tipo: 'Eléctrico',
@@ -15,9 +78,21 @@ const Admin = () => {
     imagen: '/images/logo.png'
   });
   const [editingId, setEditingId] = useState<number | null>(null);
+  const [previewImage, setPreviewImage] = useState<string>('/images/logo.png');
+  const [showImageModal, setShowImageModal] = useState(false);
+
+  useEffect(() => {
+    navigate('/admin', { replace: true });
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleImageSelect = (imagePath: string) => {
+    setFormData({ ...formData, imagen: imagePath });
+    setPreviewImage(imagePath);
+    setShowImageModal(false);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -40,10 +115,12 @@ const Admin = () => {
       badge: 'Nuevo',
       imagen: '/images/logo.png'
     });
+    setPreviewImage('/images/logo.png');
   };
 
   const handleEdit = (equipo: Equipo) => {
     setFormData(equipo);
+    setPreviewImage(equipo.imagen);
     setEditingId(equipo.id);
   };
 
@@ -53,11 +130,18 @@ const Admin = () => {
     }
   };
 
+  const handleLogout = () => {
+    logout();
+    navigate('/');
+  };
+
   return (
     <section className={styles.admin}>
       <div className={styles.adminHeader}>
         <h1 className={styles.adminTitle}>Panel de Administración</h1>
-        <a href="/" className={styles.backBtn}>← Volver al sitio</a>
+        <button onClick={handleLogout} className={styles.logoutBtn}>
+          Cerrar Sesión
+        </button>
       </div>
 
       <div className={styles.content}>
@@ -154,17 +238,13 @@ const Admin = () => {
               </div>
               <div className={styles.formGroup}>
                 <label className={styles.formLabel}>Imagen</label>
-                <select
-                  name="imagen"
-                  className={styles.formSelect}
-                  value={formData.imagen}
-                  onChange={handleChange}
+                <div 
+                  className={styles.imagePreview}
+                  onClick={() => setShowImageModal(true)}
                 >
-                  <option value="/images/logo.jpg">Imagen 1</option>
-                  <option value="/images/Nissan2.jpg">Imagen 2</option>
-                  <option value="/images/Nissan3.jpg">Imagen 3</option>
-                  <option value="/images/Nissan4.jpg">Imagen 4</option>
-                </select>
+                  <img src={previewImage} alt="Preview" />
+                  <span>Click para cambiar</span>
+                </div>
               </div>
             </div>
             <button type="submit" className={styles.submitBtn}>
@@ -185,6 +265,7 @@ const Admin = () => {
                     badge: 'Nuevo',
                     imagen: '/images/logo.png'
                   });
+                  setPreviewImage('/images/logo.png');
                 }}
                 className={styles.submitBtn}
                 style={{ marginLeft: '1rem', background: '#757575' }}
@@ -251,8 +332,40 @@ const Admin = () => {
           Restablecer Equipos por Defecto
         </button>
       </div>
+
+      {showImageModal && (
+        <div className={styles.modal} onClick={() => setShowImageModal(false)}>
+          <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
+            <h3>Seleccionar Imagen</h3>
+            <div className={styles.imageGrid}>
+              {['/images/logo.png', '/images/Nissan1.jpg', '/images/Nissan2.jpg', '/images/Nissan3.jpg', '/images/Nissan4.jpg'].map(img => (
+                <div 
+                  key={img}
+                  className={`${styles.imageOption} ${previewImage === img ? styles.selected : ''}`}
+                  onClick={() => handleImageSelect(img)}
+                >
+                  <img src={img} alt={img} />
+                </div>
+              ))}
+            </div>
+            <button onClick={() => setShowImageModal(false)} className={styles.closeModal}>
+              Cerrar
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
+};
+
+const Admin = () => {
+  const { isAuthenticated } = useAuth();
+  
+  if (!isAuthenticated) {
+    return <LoginForm />;
+  }
+  
+  return <AdminPanel />;
 };
 
 export default Admin;
