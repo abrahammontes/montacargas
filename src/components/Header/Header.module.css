@@ -5,13 +5,13 @@
   right: 0;
   z-index: 1000;
   padding: 1rem 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   transition: var(--transition);
 }
 
 .header.scrolled {
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   padding: 0.75rem 0;
 }
@@ -31,7 +31,7 @@
   gap: 0.5rem;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-white);
+  color: #000;
 }
 
 .logo img {
@@ -51,7 +51,7 @@
 }
 
 .navLink {
-  color: var(--color-white);
+  color: #000;
   font-weight: 500;
   font-size: 0.95rem;
   transition: var(--transition);
@@ -91,7 +91,7 @@
 .mobileMenu span {
   width: 25px;
   height: 2px;
-  background: var(--color-white);
+  background: #000;
   transition: var(--transition);
   position: relative;
 }
@@ -116,7 +116,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   z-index: 999;
   display: flex;
@@ -138,7 +138,7 @@
 }
 
 .mobileNavLinks li a {
-  color: var(--color-white);
+  color: #000;
   font-size: 1.5rem;
   font-weight: 600;
   transition: var(--transition);
@@ -157,7 +157,7 @@
 
 .mobileCta:hover {
   background: #AA0000;
-  color: var(--color-white) !important;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
