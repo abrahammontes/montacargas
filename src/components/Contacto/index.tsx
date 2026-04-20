@@ -204,7 +204,7 @@ Nuevo contacto desde Germont Montacargas:
                 </div>
                 <div className={styles.infoContent}>
                   <h4>Dirección</h4>
-                  <p>Marcelino Rentería #4097, Guadalajara, Jalisco, Mexico, CP 44820</p>
+                  <p>Marcelino Rentería #4097, Col. Insurgentes, Guadalajara, Jalisco, Mexico. CP 44820</p>
                 </div>
               </li>
               <li className={styles.infoItem}>
