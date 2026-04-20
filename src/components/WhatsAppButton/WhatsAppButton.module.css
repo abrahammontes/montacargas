@@ -1,7 +1,8 @@
 .whatsappButton {
   position: fixed;
   bottom: 30px;
-  left: 30px;
+  right: 30px;
+  left: auto;
   width: 80px;
   height: 80px;
   background: #25D367;
@@ -45,6 +46,7 @@
     width: 72px;
     height: 72px;
     bottom: 20px;
-    left: 20px;
+    right: 20px;
+    left: auto;
   }
 }
