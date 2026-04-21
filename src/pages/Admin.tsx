@@ -224,7 +224,7 @@ const AdminPanel = () => {
                 />
               </div>
               <div className={styles.formGroup}>
-                <label className={styles.formLabel}>Badge</label>
+                <label className={styles.formLabel}>Estado</label>
                 <select
                   name="badge"
                   className={styles.formSelect}
@@ -285,7 +285,7 @@ const AdminPanel = () => {
                 <th>Tipo</th>
                 <th>Capacidad</th>
                 <th>Precio</th>
-                <th>Status</th>
+                <th>Estado</th>
                 <th>Acciones</th>
               </tr>
             </thead>
