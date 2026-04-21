@@ -233,7 +233,7 @@ const AdminPanel = () => {
                 >
                   <option value="Nuevo">Nuevo</option>
                   <option value="Renta">Renta</option>
-                  <option value="Usado">Usado</option>
+                  <option value="Seminuevo">Seminuevo</option>
                 </select>
               </div>
               <div className={styles.formGroup}>
@@ -298,7 +298,7 @@ const AdminPanel = () => {
                   <td>{equipo.capacidad}</td>
                   <td>{equipo.precio}</td>
                   <td>
-                    <span className={`${styles.badge} ${equipo.badge === 'Nuevo' ? styles.badgeNuevo : equipo.badge === 'Renta' ? styles.badgeRenta : styles.badgeUsado}`}>
+                    <span className={`${styles.badge} ${equipo.badge === 'Nuevo' ? styles.badgeNuevo : equipo.badge === 'Renta' ? styles.badgeRenta : styles.badgeSeminuevo}`}>
                       {equipo.badge}
                     </span>
                   </td>

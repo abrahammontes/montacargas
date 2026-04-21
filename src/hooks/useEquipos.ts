@@ -8,7 +8,7 @@ export interface Equipo {
   altura: string;
   combustible: string;
   precio: string;
-  badge: 'Nuevo' | 'Renta' | 'Usado';
+  badge: 'Nuevo' | 'Renta' | 'Seminuevo';
   imagen: string;
 }
 
